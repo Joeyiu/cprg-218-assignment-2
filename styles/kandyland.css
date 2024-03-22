@@ -152,6 +152,7 @@ body {
 
 .faq {
   font-family: "Dancing Script", cursive, "Princess Sofia", 'Courier New', Courier, monospace;
+  margin-left: 10px;
 }
 
 .accordion.active .accordion-container {
