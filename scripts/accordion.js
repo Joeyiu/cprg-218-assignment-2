@@ -1,18 +1,13 @@
 let acc = document.getElementsByClassName("accordion");
-let i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", () => {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
-
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById("year").innerHTML = year;
